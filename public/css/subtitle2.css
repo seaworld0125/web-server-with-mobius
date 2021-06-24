@@ -1,0 +1,12 @@
+.subtitle2 {
+    font-size: 8vh;
+    text-align: center;
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .subtitle2 {
+        font-size: 40px;
+    }
+}

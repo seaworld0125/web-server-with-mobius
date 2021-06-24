@@ -1,0 +1,16 @@
+select {
+    margin: 0px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    text-align-last: center;
+    display: block;
+    background-color:#272625;
+    background: #272625;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+    padding: .5em .5em;
+    border: 2px solid #999;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 0px;
+}

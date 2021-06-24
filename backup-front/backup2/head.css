@@ -1,0 +1,13 @@
+#head {
+    float: right;
+}
+
+@media screen and (max-width: 6000px) {
+    #head {
+        float: none;
+        margin-right: 0px;
+        height: 90px;
+        display: block;
+        margin: 0px auto;
+    }
+}

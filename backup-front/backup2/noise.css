@@ -1,0 +1,14 @@
+#noise {
+    float: none;
+}
+
+@media screen and (max-width: 6000px) {
+    #noise {
+        float: none;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        height: 90px;
+        display: block;
+        margin: 0px auto;
+    }
+}

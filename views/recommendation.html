@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/subtitle.css">
+    <link rel="stylesheet" href="css/subBody.css">
+    <link rel="stylesheet" href="css/subBody2.css">
+    <link rel="stylesheet" href="css/recommendation.css">
+    <link rel="stylesheet" href="css/temp.css">
+    <link rel="stylesheet" href="css/noise.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/selectform.css">
+    <!-- <link rel="stylesheet" href="css/submit.css"> -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        window.onload = function(){
+            var btn = document.getElementById('button');
+            if(btn){
+                btn.addEventListener('click', function(evt){
+                    // alert("click");
+                    var get = new Array();
+                    var target;
+                    target = document.getElementById("select1");
+                    get[0] = target.options[target.selectedIndex].value;
+                    target = document.getElementById("select2");
+                    get[1] = target.options[target.selectedIndex].value;
+                    target = document.getElementById("select3");
+                    get[2] = target.options[target.selectedIndex].value;
+                    //Ajax GET Method TEST
+                    $.ajax({
+                        url: '/recommendation/req',
+                        dataType: 'json',
+                        type: 'POST',
+                        data: { 'temp' : get[0], 'noise' : get[1], 'count' : get[2] },
+                        success: function(result) {
+                            
+                            if (result) {
+                                $('#get_output').html(result.result);
+                            }
+                        }
+                    });
+                });
+            }
+        };
+    </script>
+    <style>
+        body {
+            background-color: #272625;
+        }
+    </style>
+</head>
+<body>
+    <p class="subtitle">RECOMMENDATION</p>
+    <form id="form">
+        <img id ="temp" src="image/temp.png"></a><br>
+        <select name="select1", id="select1">
+            <!-- <option value="">OPTION</option> -->
+            <option value="low">LOW</option>
+            <option value="mid">MIDDLE</option>
+            <option value="high">HIGH</option>
+        </select>
+        <img id ="noise" src="image/noise.png"></a><br>
+        <select name="select2", id="select2">
+            <!-- <option value="">OPTION</opiton> -->
+            <option value="low">LOW</option>
+            <option value="mid">MIDDLE</option>
+            <option value="high">HIGH</option>
+        </select>
+        <img id ="head" src="image/head.png"></a><br>
+        <select name="select3", id="select3">
+            <!-- <option value="">OPTION</option> -->
+            <option value="low">LOW</option>
+            <option value="mid">MIDDLE</option>
+            <option value="high">HIGH</option>
+        </select>
+            <input type="button" id="button" style="display: block; margin: 0 auto; margin-bottom: -3%; background: url(image/submit.png); border: 0; outline: 0; width: 250px; height: 100px;"">
+    </form><br>
+    <div>
+        <p class="subBody2" id ="get_output"></p>
+    </div>
+    <!-- <script>
+        var btn = document.getElementById('button');
+        if(btn){
+            btn.addEventListener('click', function(evt){
+                alert("click");
+            });
+        }
+    </script> -->
+</body>
+</html>

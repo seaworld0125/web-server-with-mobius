@@ -1,0 +1,59 @@
+.condicon {
+    position: absolute;
+    margin-top: 12vw;
+}
+
+#img1 {
+    height: 10vw;
+    width: 10vw;
+    margin-bottom: 1.5vw;
+}
+#img2 {
+    height: 10vw;
+    width: 10vw;
+    margin-bottom: 1.5vw;
+}
+#img3 {
+    height: 10vw;
+    width: 10vw;
+}
+
+@media screen and (max-height: 800px) {
+    .condicon {
+        margin-top: 13vw;
+    }
+    #img1 {
+	height: 10vw;
+	width: 10vw;
+	margin-bottom: 1.5vw;
+    }
+    #img2 {
+	height: 10vw;
+	width: 10vw;
+	margin-bottom: 1.5vw;
+    }
+    #img3 {
+	height: 10vw;
+	width: 10vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .condicon {
+        margin-top: 25vw;
+    }
+    #img1 {
+        height: 13vw;
+        width: 13vw;
+        margin-bottom: 12vw;
+    }
+    #img2 {
+        height: 13vw;
+        width: 13vw;
+        margin-bottom: 12vw;
+    }
+    #img3 {
+        height: 13vw;
+        width: 13vw;
+    }
+}

@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+div.div1{
+    height: 50%;
+    width: 100%;
+    position: inherit;
+    display: flex;
+    align-items: center;
+}
+div.div2{
+    height: 50%;
+    width: 50%;
+    float: left;
+    position: inherit;
+}
+div.div3{
+    height: 50%;
+    width: 50%;
+    float: right;
+    position: inherit;
+}
+/* @media screen and (max-width: 600px) {
+    #div1 {
+        padding-top: 20%;
+    }
+}  */

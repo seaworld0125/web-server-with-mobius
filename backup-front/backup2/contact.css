@@ -1,0 +1,13 @@
+#contact {
+    width: 30vw;
+    height: 30vw;
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    #contact {
+        margin-right: 0.5%;
+        width: 46vw;
+        height: 46vw;
+    }
+}

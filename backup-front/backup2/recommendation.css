@@ -1,0 +1,15 @@
+#recommendation {
+    display: block;
+    margin: 0 auto;
+    width: 30vw;
+    height: 30vw;
+    float: none;
+}
+
+@media screen and (max-width: 600px) {
+    #recommendation {
+        margin-top: 60%;
+        width: 95vw;
+        height: 95vw;
+    }
+}

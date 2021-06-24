@@ -1,0 +1,12 @@
+.subBody {
+    font-size: 25px;
+    text-align: center;
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .subBody {
+        font-size: 20px;
+    }
+}

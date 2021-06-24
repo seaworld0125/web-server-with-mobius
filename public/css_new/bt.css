@@ -1,0 +1,54 @@
+#bt1 {
+    height: 35vh;
+    line-height: 100%;
+    width: 35vh;
+    outline: 0;
+    border: 0;
+    background-color:transparent;
+    /* vertical-align: middle; */
+    /* position: inherit; */
+    display: block; 
+    margin: 0 auto;
+    z-index: 50px;
+}
+#bt2 {
+    height: 35vh;
+    width: 35vh;
+    outline: 0;
+    border: 0;
+    background-color:transparent;
+    /* position: inherit; */
+    display: block; 
+    margin: 0 auto;
+    z-index: 50px;
+}
+#bt3 {
+    height: 35vh;
+    width: 35vh;
+    outline: 0;
+    border: 0;
+    background-color:transparent;
+    /* position: inherit; */
+    display: block; 
+    margin: 0 auto;
+    z-index: 50px;
+}
+
+@media screen and (max-width: 750px) {
+    #bt1 {
+        height: 25vh;
+        width: 25vh;
+    }
+} 
+@media screen and (max-width: 750px) {
+    #bt2 {
+        height: 25vh;
+        width: 25vh;
+    }
+}
+@media screen and (max-width: 750px) {
+    #bt3 {
+        height: 25vh;
+        width: 25vh;
+    }
+}

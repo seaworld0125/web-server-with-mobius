@@ -1,0 +1,55 @@
+#table414 {
+    margin-left: 5.5%;
+    margin-right: 3%;
+    float: left;
+    margin-top: 23.5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: orange;
+    text-align: center; 
+    background-color: #272625; 
+}
+
+#table415 {
+    float: left;
+    margin-top: 23.5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: orange;
+    text-align: center; 
+    background-color: #272625; 
+}
+
+@media screen and (max-width: 600px) {
+    #table414 {
+        width: 50%;
+        height: 50%;
+        margin-left: 0%;
+        margin-right: 0%;
+        float: left;
+        margin-top: 10%;
+    }
+    
+    #table415 {
+        width: 50%;
+        height: 50%;
+        float: left;
+        margin-top: 10%;
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    #table414 {
+        width: 40%;
+        height: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        float: left;
+        margin-top: 10%;
+    }
+    
+    #table415 {
+        width: 40%;
+        height: 40%;
+        float: left;
+        margin-top: 10%;
+    }
+} */

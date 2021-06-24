@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mainTitle.css">
+    <link rel="stylesheet" href="css/subtitle.css">
+    <link rel="stylesheet" href="css/subtitle2.css">
+    <link rel="stylesheet" href="css/subBody3.css">
+    <link rel="stylesheet" href="css/condition.css">
+    <link rel="stylesheet" href="css/condicon.css">
+    <link rel="stylesheet" href="css/condicon.css">
+    <link rel="stylesheet" href="css/condtitle.css">
+    <link rel="stylesheet" href="css/condstatus.css">
+    <link rel="stylesheet" href="css/condtable.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        window.onload = function() {
+            setInterval(function(){
+                var get = '';
+                $.ajax({
+                    url: '/condition/req',
+                    dataType: 'json',
+                    type: 'GET',
+                    data: {data:get},
+                    success: function(result) {
+                        // console.log(result);
+                        if (result) {
+                            var result415 = [result['temp415'], result['sound415'], result['cam415']];
+                            var result414 = [result['temp414'], result['sound414'], result['cam414']];
+                            $('#get_output1').html(result415[0]);
+                            $('#get_output2').html(result415[1]);
+                            $('#get_output3').html(result415[2]);
+                            $('#get_output4').html(result414[0]);
+                            $('#get_output5').html(result414[1]);
+                            $('#get_output6').html(result414[2]);
+
+                            var exists415 = result['exists415'];
+                            var exists414 = result['exists414'];
+                            $('#get_exists1').html(exists415[0]);
+                            $('#get_exists2').html(exists415[1]);
+                            $('#get_exists3').html(exists415[2]);
+                            $('#get_exists4').html(exists415[3]);
+                            $('#get_exists5').html(exists415[4]);
+                            $('#get_exists6').html(exists415[5]);
+                            $('#get_exists7').html(exists415[6]);
+                            $('#get_exists8').html(exists415[7]);
+                            $('#get_exists9').html(exists415[8]);
+                            $('#get_exists10').html(exists414[0]);
+                            $('#get_exists11').html(exists414[1]);
+                            $('#get_exists12').html(exists414[2]);
+                            $('#get_exists13').html(exists414[3]);
+                            $('#get_exists14').html(exists414[4]);
+                            $('#get_exists15').html(exists414[5]);
+                            $('#get_exists16').html(exists414[6]);
+                            $('#get_exists17').html(exists414[7]);
+                            $('#get_exists18').html(exists414[8]);
+                        }
+                    }
+                });
+            }, 2000);
+        };
+    </script>
+    <style>
+    body {
+        background-color: #272625;
+        }
+    </style>
+</head>
+<body>
+    <p class="subtitle">CONDITION</p>
+
+    <div class="condtitle">
+    <p id="title414">ML414</p>
+    <p id="title415">ML415</p>
+    </div>
+
+    <div class="condicon">
+    <img id="img1" src="image/tempicon.png"><br>
+    <img id="img2" src="image/noiseicon.png"><br>
+    <img id="img3" src="image/headicon.png"><br>
+    </div>
+
+    <div class="cond414">
+    <p p class="subBody3" id ="get_output4">36.5 Degree</p>
+    <p p class="subBody3" id ="get_output5">10 Decibel</p>
+    <p p class="subBody3" id ="get_output6">5 Exists</p>
+    </div>
+    
+    <table id="table414" bordercolor="orange" width ="200" height="200">
+        <tr bordercolor="orange"></tr>
+        <p><td colspan = "3" span>ML414</td></p>
+        </tr>
+        <td><p p id ="get_exists10">1</p></td>
+        <td><p p id ="get_exists11">2</p></td>
+        <td><p p id ="get_exists12">3</p></td>
+        </tr>
+        <tr>
+        <td><p p id ="get_exists13">4</p></td>
+        <td><p p id ="get_exists14">5</p></td>
+        <td><p p id ="get_exists15">6</p></td>
+        </tr>
+        <tr>
+        <td><p p id ="get_exists16">7</p></td>
+        <td><p p id ="get_exists17">8</p></td>
+        <td><p p id ="get_exists18">9</p></td>
+        </tr>
+
+    <div class="cond415">
+    <p p class="subBody3" id ="get_output1">36.5 Degree</p>
+    <p p class="subBody3" id ="get_output2">10 Decibel</p>
+    <p p class="subBody3" id ="get_output3">5 Exists</p>
+    </div>
+
+    <table table id="table415" bordercolor="orange"width ="200" height="200">
+        <tr bordercolor="orange"></tr>
+        <p><td colspan = "3" span>ML415</td></p>
+        </tr>
+        <td><p p id ="get_exists1">1</p></td>
+        <td><p p id ="get_exists2">2</p></td>
+        <td><p p id ="get_exists3">3</p></td>
+        </tr>
+        <tr>
+        <td><p p id ="get_exists4">4</p></td>
+        <td><p p id ="get_exists5">5</p></td>
+        <td><p p id ="get_exists6">6</p></td>
+        </tr>
+        <tr>
+        <td><p p id ="get_exists7">7</p></td>
+        <td><p p id ="get_exists8">8</p></td>
+        <td><p p id ="get_exists9">9</p></td>
+        </tr>
+    </table>
+</body>
+</html>

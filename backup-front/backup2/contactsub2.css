@@ -1,0 +1,12 @@
+.contactsub2 {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .contactsub2 {
+        font-size: 20px;
+    }
+}

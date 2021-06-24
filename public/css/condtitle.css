@@ -1,0 +1,50 @@
+.condtitle {
+    font-size: 4vw;
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
+    display: block;
+    margin-top: -5%;
+    
+}
+
+#title414 {
+    float: left; 
+    margin-left: 20vw;
+}
+
+#title415 {
+    float: right; 
+    margin-right: 20vw;
+}
+
+@media screen and (max-width: 1300px) {
+    .condtitle {
+        margin-top: -3%;
+        font-size: 5vw;
+    }
+    #title414 {
+        float: left; 
+        margin-left: 15vw;
+    }
+    
+    #title415 {
+        float: right; 
+        margin-right: 13vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .condtitle {
+        margin-top: -10%;
+        font-size: 7vw;
+    }
+    #title414 {
+        float: left; 
+        margin-left: 20vw;
+    }
+    
+    #title415 {
+        float: right; 
+        margin-right: 20vw;
+    }
+}

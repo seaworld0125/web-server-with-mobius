@@ -1,0 +1,14 @@
+#condition {
+    width: 30vw;
+    height: 30vw;
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    #condition {
+        margin-left: 0.5%;
+	margin-bottom: 3%;
+        width: 46vw;
+        height: 46vw;
+    }
+}

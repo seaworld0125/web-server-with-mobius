@@ -1,0 +1,12 @@
+.mainTitle {
+    font-size: 70px;
+    text-align: center;
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .mainTitle {
+        font-size: 40px;
+    }
+}

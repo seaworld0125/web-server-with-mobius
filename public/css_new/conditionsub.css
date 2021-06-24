@@ -1,0 +1,12 @@
+.conditionsub {
+    font-size: 100px;
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .conditionsub {
+        font-size: 35px;
+    }
+}
